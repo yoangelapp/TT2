@@ -1,0 +1,125 @@
+
+
+#boton_social:hover {
+    background: rgba(12, 54, 251, 0.53);
+    color: #ffffff; }
+
+#boton_social {
+    background: #eff2f1;
+}
+
+
+
+#btn_ubicacion_sobrenosotros {
+        background: #9b9a9a;
+        color: #ffffff; }
+
+#btn_ubicacion_sobrenosotros:hover{
+    background: rgba(12, 54, 251, 0.53);
+    color: #ffffff; }
+
+.img_backgr{
+    background-image: url('../images/portada_04.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 104%;
+    padding-bottom: 6.8cm;
+    padding-top: 22%;
+}
+
+.img_backgr_disponibilidad{
+    background-image: url('../images/portada_disponibilidad.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 6.8cm;
+    padding-top: 25%;
+}
+
+.img_backgr_sobre_nosotros{
+    background-image: url('../images/sobre_nosotros_e.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 6.8cm;
+    padding-top: 26%;
+}
+
+
+#boton_WS{
+    background: rgb(37 211 102);
+    color: #ffffff; }
+
+#boton_WS:hover {
+    background: rgba(12, 54, 251, 0.53);
+    color: #ffffff; }
+
+#btn_disponibilidad{
+    background-color:rgba(136, 218, 116, 0.678);
+}
+
+#btn_disponibilidad:hover {
+    background: rgba(12, 54, 251, 0.53);
+    color: #ffffff; }
+
+
+.btn-flotante{
+    
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+}
+
+#li_apt{
+    background-color:rgba(245, 245, 245, 0.692);
+    
+}
+
+#li_apt:hover{
+    color: white;
+    background-color: rgba(12, 56, 251, 0.370);
+    -webkit-transform: translate(0%, -10%);
+    -ms-transform: translate(0%, -10%);
+    transform: translate(0%, -10%);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; 
+}
+
+.li_apt_margin{
+    margin-bottom: 2%;
+}
+
+#a_img_fila{
+    padding-left: 0%;
+}
+
+/* Barra de navegacion */
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+#bcgr_ul{
+    background-color: rgba(71, 101, 235, 0.37);
+}
+
+#titulo_dropdown:hover{
+    background-color: rgba(104, 125, 218, 0.53);
+}
+
+/* footer section */
+.color_font{
+color: white;}
+
+#boton_social_footer {
+    background: #ebecf0;
+}
+
+#boton_social_footer:hover {
+    background: rgba(12, 54, 251, 0.53);
+    color: #ffffff;
+}

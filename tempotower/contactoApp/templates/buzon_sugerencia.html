@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+		<!-- Start Hero Section -->
+    <div class="hero">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-7">
+            <div class="intro-excerpt">
+              <h1>Buzon de sugerencia</h1>
+              <p class="mb-4">Aqui iría un texto en español que hable de nosotros como empresa o de nuestra torre Tempo Tower</p>
+              <p><a href="" class="btn btn-secondary me-2">Ayudanos a mejorar</a></p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-img-wrap">
+              <img src="{% static '/TempoTower/images/LOGO_TempoTower2.png' %}" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End Hero Section -->
+<div class="untree_co-section">
+  <div class="container">
+
+    <div class="block">
+      <div class="row justify-content-center">
+
+
+        <div class="col-md-8 col-lg-8 pb-4">
+
+          <form action="" method="POST">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="fname">Nombre</label>
+                  <input type="text" class="form-control" id="fname">
+                </div>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Prefiero no decirlo
+                </label>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="lname">Apellido</label>
+                  <input type="text" class="form-control" id="lname">
+                </div>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Prefiero no decirlo
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="text-black" for="email">Correo electronico</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="lname">Apartamento</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Selecciona el numero de apartamento</option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="1">04</option>
+                    <option value="2">05</option>
+                    <option value="3">06</option>
+                    <option value="3">07</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  Nivel
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Selecciona el nivel</option>
+                    <option value="1">Primer nivel</option>
+                    <option value="2">Tercer nivel</option>
+                    <option value="3">Cuanto nivel</option>
+                    <option value="1">Quinto nivel</option>
+                    <option value="2">Sexto Nivel</option>
+                    <option value="3">Septimo Nivel</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mb-5">
+              <label class="text-black" for="message">Sugerencia</label>
+              <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary-hover-outline">Enviar Sugerencia</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+  {% endblock %}

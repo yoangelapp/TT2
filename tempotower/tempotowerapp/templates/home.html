@@ -1,0 +1,333 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+		<!-- Start Hero Section -->
+			<div class="hero img_backgr" >
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-7">
+							<div class="intro-excerpt" style="padding-bottom: 30.5%;">
+								<p >
+									<a class="btn btn-secondary me-2" id="boton_social" href="https://www.instagram.com/tempotower_/" target="_blank"><span class="fa fa-brands fa-instagram "></span></a>
+									<a class="btn btn-secondary me-2" id="boton_social" href="https://acortar.link/ERDrrM" target="_blank" ><span class="fa-brands fa-whatsapp"></span></a>
+									<a class="btn btn-secondary me-2" id="boton_social" href="https://acortar.link/cr4TOi" target="_blank"><span class="fa-solid fa-location-dot"></span></a>
+									<a class="btn btn-secondary me-2" id="boton_social" href="{% url 'contacto' %}" ><span class="fa-regular fa-envelope "></span></a>
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="hero-img-wrap">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+		
+		<!-- Start Why Choose Us Section -->
+		<div class="why-choose-section">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-6">
+						<h2 class="section-title">	Porque elegirnos</h2>
+						<p>Apartamentos amueblados diseñados para mentes ocupadas.</p>
+
+						<div class="row my-5">
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<a class="btn btn-secondary me-2" id="btn_ubicacion_sobrenosotros" href="https://acortar.link/cr4TOi" target="_blank"><span class="fa-solid fa-location-dot"></span></a>
+										<!--<img src="{% static '/TempoTower/images/truck.svg' %}" alt="Image" class="imf-fluid">-->
+									</div>
+									<h3>Ubicacion &amp; estretegica</h3>
+									<p>Estamos ubicados en un punto estrategico en la zona metropolitana.</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="{% static '/TempoTower/images/security.svg' %}" alt="Image" class="imf-fluid" style="max-width: 50px;">
+										<!--<a class="btn btn-secondary me-2" id="boton_social"><span class="fa-solid fa-shield-halved"></span></a>-->
+										<!--<i class="fa-solid fa-shield-halved"></i> <img src="{% static '/TempoTower/images/bag.svg' %}" alt="Image" class="imf-fluid">-->
+									</div>
+									<h3>Seguridad</h3>
+									<p>seguridad las 24 horas del dia, control de acceso en todas las puertas.</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="{% static '/TempoTower/images/comfort.svg' %}" alt="Image" class="imf-fluid" style="max-width: 50px;">
+									</div>
+									<h3>Comodidad</h3>
+									<p>completamente amueblado con elegantes areas sociables.</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="{% static '/TempoTower/images/edificio.svg' %}" alt="Image" class="imf-fluid" style="max-width: 50px;">
+									</div>
+									<h3>Nuevo concepto</h3>
+									<p>somos un nuevo conecpto de apartamentos Gim y picina en el rooftop.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-lg-5">
+						<div class="img-wrap">
+							<img src="{% static '/TempoTower/images/IMG-20240111-WA0004.JPG' %}" alt="Image" class="img-fluid">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Why Choose Us Section -->
+
+
+		<!-- Start Apartamentos Section -->
+		
+		<!-- Start Apartamentos Section -->
+		<div class="product-section">
+			<div class="container">
+				<p class="h1" style="text-align: center; margin-bottom: 2%; margin-top: -5%;">Aqui te mostramos algunas de nuestas areas</p>
+			
+				<div class="row">
+					<!-- Start Column 1 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'habitaciones' %}">
+							<img src="{% static '/TempoTower/images/portada_habitacion.png' %}"  class="img-fluid product-thumbnail">
+							<h3 class="product-title"><STRONG>HABITACIONES</strong></h3>
+								<h3 class="product-title"></h3>
+
+							<span class="icon-cross">
+								<img src="{% static '/TempoTower/images/cross.svg' %}" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 1 -->
+
+					<!-- Start Column 2 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'salas' %}">
+							<img src="{% static '/TempoTower/images/Sala_04.png' %}" class="img-fluid product-thumbnail">
+							<h3 class="product-title"><STRONG>SALAS</strong></h3>
+								<h3 class="product-title"></h3>
+
+							<span class="icon-cross">
+								<img src="{% static '/TempoTower/images/cross.svg' %}" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 2 -->
+
+					<!-- Start Column 3 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'sociales' %}">
+							<img src="{% static '/TempoTower/images/sociales_01_01.png' %}" class="img-fluid product-thumbnail" style="max-width: 475px;">
+							<h3 class="product-title"><STRONG>AREAS SOCIALES</strong></h3>
+								<h3 class="product-title"></h3>
+
+							<span class="icon-cross">
+								<img src="{% static '/TempoTower/images/cross.svg' %}" class="img-fluid">
+							</span>
+						</a>
+					</div>
+					<!-- End Column 3 -->
+
+				</div>
+
+				<div class="row" style="margin-top: 1cm;">
+
+					<!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'cocinas' %}">
+							<img src="{% static '/TempoTower/images/portada_cocina3.png' %}" class="img-fluid product-thumbnail" style="max-height: 415px;">
+							<h3 class="product-title"><STRONG>COCINAS</strong></h3>
+								<h3 class="product-title"></h3>
+
+							<span class="icon-cross">
+								<img src="{% static '/TempoTower/images/cross.svg' %}" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 4 -->					
+					
+					<!-- Start Column 5 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'gimnacio' %}">
+							<img src="{% static '/TempoTower/images/portada_gimnacio.png' %}" class="img-fluid product-thumbnail" >
+							<h3 class="product-title"><STRONG>GIMNACIO</strong></h3>
+								<h3 class="product-title"></h3>
+
+							<span class="icon-cross">
+								<img src="{% static '/TempoTower/images/cross.svg' %}" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 5 -->
+					
+					<!-- Start Column 6 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'picuzzi' %}">
+							<img src="{% static '/TempoTower/images/picuzzi_02.png' %}" class="img-fluid product-thumbnail">
+							<h3 class="product-title"><STRONG>PICUZZI</strong></h3>
+								<h3 class="product-title"></h3>
+
+							<span class="icon-cross">
+								<img src="{% static '/TempoTower/images/cross.svg' %}" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- Start Column 6 -->
+					
+
+
+
+
+			</div>
+		</div>
+		<!-- End Apartamentos Section -->
+		
+
+		<!-- Start Contact Form -->
+		<div class="untree_co-section">
+			<div class="container">
+	  
+			  <div class="block">
+				<div class="row justify-content-center">
+	  
+	  
+				  <div class="col-md-8 col-lg-8 pb-4">
+	  
+	  
+					<div class="row mb-5">
+					  <div class="col-lg-4">
+						<div  class="service no-shadow align-items-center link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+						  <div class="service-icon color-1 mb-4">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+							  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+							</svg>
+						  </div> <!-- /.icon -->
+						  <div class="service-contents">
+							<a href="https://www.google.com/maps/dir//F3FM%2B5GX,+C.+La+Lira,+Santo+Domingo+10107/@18.4729738,-69.9985383,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8eaf89cfb09963cf:0x67f49b68a0922457!2m2!1d-69.9161608!2d18.4730179?hl=es-419&entry=ttu" target="_blank"><p>Santo Domingo, calle la Lira #16 El Vergel</p></a>
+						  </div> <!-- /.service-contents-->
+						</div> <!-- /.service -->
+					  </div>
+	  
+					  <div class="col-lg-4">
+						<div  class="service no-shadow align-items-center link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+						  <div class="service-icon color-1 mb-4">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+							  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+							</svg>
+						  </div> <!-- /.icon -->
+						  <div class="service-contents">
+							<p>tempotower01@gmail.com</p>
+						  </div> <!-- /.service-contents-->
+						</div> <!-- /.service -->
+					  </div>
+	  
+					  <div class="col-lg-4">
+						<div  class="service no-shadow align-items-center link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+						  <div class="service-icon color-1 mb-4">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+							  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+							</svg>
+						  </div> <!-- /.icon -->
+						  <div class="service-contents">
+							<a href="https://wa.link/7raslx" target="_blank"><p>+1 809 754 2350</p></a>
+						  </div> <!-- /.service-contents-->
+						</div> <!-- /.service -->
+					  </div>
+					</div>
+					{% if "valido" in request.GET %}
+					  <P style="color: green;">formulario enviado correctamente</P>
+					{% endif %}
+	  
+					{% if "novalido" in request.GET %}
+					  <P style="color: red;">Tu mensaje no ha podido ser enviado</P>
+					{% endif %}
+					<form action="/registrarFormularioC/" method="POST">{% csrf_token %}
+					  <div class="row">
+						<div class="col-6">
+						  <div class="form-group">
+							<label class="text-black" for="fname">Nombre</label>
+							<input type="text" name="txtNombre" class="form-control" id="fname">
+						  </div>
+						</div>
+						<div class="col-6">
+						  <div class="form-group">
+							<label class="text-black" for="lname">Apellido</label>
+							<input type="text" name="txtApellido" class="form-control" id="lname">
+						  </div>
+						</div>
+					  </div>
+					  <div class="form-group">
+						<label class="text-black" for="email">Correo electronico</label>
+						<input type="email" name="txtMail" class="form-control" id="email">
+					  </div>
+	  
+					  <div class="form-group mb-5">
+						<label class="text-black" for="message">Mensaje</label>
+						<textarea name="txtMensaje" class="form-control" id="message" cols="30" rows="5"></textarea>
+					  </div>
+	  
+					  <button type="submit" class="btn btn-primary-hover-outline">Enviar Mensaje</button>
+					</form>
+	  
+				  </div>
+	  
+				</div>
+	  
+			  </div>
+	  
+			</div>
+	  
+	  
+		  </div>
+		</div>
+	  
+		<!-- End Contact Form -->
+
+
+
+		<!-- ubicacion,Google Maps, Mapa -->
+		
+		<div class="untree_co-section" style="background-size: 100%;">
+			
+			<div class="container">
+				<h2 class="section-title">	Ubicacion estretegica</h2>
+			<p class="h6">Estamos ubicados en un punto estrategico en la zona metropolitana.</p>
+			  <div class="block">
+				<div class="row justify-content-center">
+				  <div class="col-md-12 col-lg-12 pb-12">
+					<div class="map-area">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.2353292441167!2d-69.91871152583171!3d18.472996670627765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89cfb09963cf%3A0x67f49b68a0922457!2sTempo%20Tower%20by
+						%20La%20Marquesa!5e0!3m2!1ses-419!2sdo!4v1708135530305!5m2!1ses-419!2sdo" 
+						width="1110" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+	  			  </div>
+				</div>
+			  </div>
+			</div>
+	  
+	  
+		  </div>
+		</div>
+	  
+	  </html>
+
+
+{% endblock %}
+		

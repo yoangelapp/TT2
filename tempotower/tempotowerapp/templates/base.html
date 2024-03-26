@@ -1,0 +1,178 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+		<!-- Bootstrap CSS -->
+		<link href="{% static '/TempoTower/css/bootstrap.min.css' %}" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="{% static '/TempoTower/css/tiny-slider.css' %}" rel="stylesheet">
+		<link href="{% static '/TempoTower/css/style.css' %}" rel="stylesheet">
+		<link href="{% static '/TempoTower/css/personalizado.css' %}" rel="stylesheet">
+		<title>TEMPO TOWER </title>
+	</head>
+	
+	
+	<body>
+
+		<!-- Start Header/Navigation -->
+		<nav  class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"  arial-label="Furni navigation bar">
+
+			<div class="container" >
+				<a class="navbar-brand" href="{% url 'home' %}">TEMPO TOWER<span>.</span></a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsFurni" >
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item  {% if request.path == '/' %}active {% endif %}">
+							<a class="nav-link" href="{% url 'home' %}">Home</a>
+						</li>
+
+						<li class="nav-item  {% if request.path == '/sobrenosotros/' %}active {% endif %}">
+                            <a class="nav-link" href="{% url 'sobrenosotros' %}"> Sobre Nosotros</a>
+                        </li>
+
+						<li class="nav-item  {% if request.path == '/apartamentos/' %}active {% endif %}
+						 {% if request.path == '/apartamentos/habitaciones/' %}active {% endif %}
+						 {% if request.path == '/apartamentos/salas/' %}active {% endif %}
+						 {% if request.path == '/apartamentos/cocinas/' %}active {% endif %}
+						 {% if request.path == '/apartamentos/sociales/' %}active {% endif %}
+						 {% if request.path == '/apartamentos/gimnacion/' %}active {% endif %}
+						 {% if request.path == '/apartamentos/picuzzi/' %}active {% endif %}">
+							<a class="nav-link" href="{% url 'apartamentos' %}">Apartamentos</a>
+						</li >
+
+						<li class="nav-item  {% if request.path == '/contacto/' %}active {% endif %} {% if request.path == '/disponibilidad/' %}active {% endif %} menu-item-object-page 
+						menu-item-has-children dropdown nav-item nav-item-38">
+							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="{% url 'contacto' %}" >Contactanos</a>
+							<ul class="dropdown-menu  depth_0" id="bcgr_ul">
+								<li id="menu-item-54" class="menu-item menu-item-type-custom menu-item-object-custom 
+									  nav-item nav-item-54"><a href="{% url 'contacto' %}" id="titulo_dropdown" class="dropdown-item ">Contacto</a>
+								 </li>
+								 <li id="menu-item-55" class="menu-item menu-item-type-custom menu-item-object-custom 
+									 nav-item nav-item-55"><a href="{% url 'disponibilidad' %}" id="titulo_dropdown" class="dropdown-item ">Disponibilidad</a>
+								 </li>
+						    </ul>
+						</li>
+
+						<li class="nav-item  {% if request.path == '/buzonSugerencia/' %}active {% endif %}">
+							<a class="nav-link" href="{% url 'buzon_sugerencia' %}">Buzon de sugerencia</a>
+						</li>
+					</ul>
+					
+
+					<!--<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+						<li><a class="nav-link" href="#"><img src="{% static '/TempoTower/images/user.svg' %}"></a></li>
+						<li><a class="nav-link" href="cart.html"><img src="{% static '/TempoTower/images/cart.svg' %}"></a></li>
+					</ul> -->
+				</div>
+			</div>
+				
+		</nav>
+		<!-- End Header/Navigation -->
+
+		<!-- inicio bton Flotante-->
+		<div class="btn-flotante" style="position: fixed;">
+			<p><a href="{% url 'disponibilidad' %}" class="btn btn-secondary me-2" id="btn_disponibilidad">Disponibilidad</a></p>
+		</div>
+		<!-- fin bton Flotante-->
+        {% block content %}
+
+
+		
+		{% endblock %}
+		
+        <!-- Start Footer Section -->
+		<footer class="footer-section">
+			<div class="container relative ">
+				<div class="row g-5 mb-5 py-0">
+					<div class="intro-excerpt">
+						<P class="h2 color_font text-center">REDES SOCIALES</P>
+						<div class="text-center">	
+							<p  class="">
+								<a class="btn btn-secondary me-2" id="boton_social_footer" href="https://www.instagram.com/tempotower_/" target="_blank"><span class="fa fa-brands fa-instagram "></span></a>
+								<a class="btn btn-secondary me-2" id="boton_social_footer" href="https://acortar.link/ERDrrM" target="_blank" ><span class="fa-brands fa-whatsapp"></span></a>
+								<a class="btn btn-secondary me-2" id="boton_social_footer" href="https://acortar.link/cr4TOi" target="_blank"><span class="fa-solid fa-location-dot"></span></a>
+								<a class="btn btn-secondary me-2" id="boton_social_footer" href="{% url 'contacto' %}" ><span class="fa-regular fa-envelope"></span></a>
+							</p>
+					    </div>	
+					</div>
+					<div class="col-lg-4">
+						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo color_font" style="color: white;">TEMPO TOWER<span>.</span></a></div>
+						<p class="mb-4 H2 color_font">Apartamentos completamente amueblados con estilo moderno y funcional, listos para ser rentados! </p>
+					</div>
+
+					<div class="col-lg-8">
+						<div class="row links-wrap">
+							<div class="col-6 col-sm-6 col-md-6" style="margin-top: -7%;">
+								<ul class="list-unstyled" > 
+									<p style="float: left;">
+									<a class="btn btn-secondary me-2" id="boton_social_footer" href="{% url 'contacto' %}" ><span class="fa-regular fa-envelope "></span></a>
+									<li ><h2 class="H1 color_font">Contactos</h2></li>
+									</p>
+									<P class="color_font">(809) 754-2350</P>
+									<li ><a href="#" class="H1">inmobiliaria.t.ad@gmail.com</a></li>
+								</ul>
+							</div>
+
+
+							<div class="col-6 col-sm-6 col-md-6" style="margin-top: -7%;">
+								<ul class="list-unstyled" >
+									<p style="float: left;">
+										<a class="btn btn-secondary me-2" id="boton_social_footer" href="https://acortar.link/cr4TOi" target="_blank"><span class="fa-solid fa-location-dot"></span></a>
+										<li ><h2 class="H1 color_font">Ubicacion</h2></li>
+									</p>
+									<p class="color_font">CALLE LA LIRA #16 EL VERGEL. SANTO DOMINGO R.D.</p>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="border-top copyright">
+					<div class="row pt-4">
+						<div class="col-lg-6">
+							<p class="mb-2 text-center text-lg-start color_font">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Disenado por YOANGEL_APP <a href="https://untree.co">Untree.co</a> Distributed By <a hreff="https://themewagon.com">ThemeWagon</a>  <!-- License information: https://untree.co/license/ -->
+            			</p>
+						</div>
+
+						<div class="col-lg-6 text-center text-lg-end">
+							<ul class="list-unstyled d-inline-flex ms-auto">
+								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</footer>
+		<!-- End Footer Section -->	
+
+
+		<script src="{% static '/TempoTower/js/bootstrap.bundle.min.js' %}"></script>
+		<script src="{% static '/TempoTower/js/tiny-slider.js' %}"></script>
+		<script src="{% static '/TempoTower/js/custom.js' %}"></script>
+	</body>
+
+</html>
+

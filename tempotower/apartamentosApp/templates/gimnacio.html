@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+<!--Container imagen principal-->
+<div class="container-fluid">
+    <h3 class="h1 text-center" style=" margin-top: 1cm;"> GALERIA DE IMAGENES </h3>
+    <div class="row"  style="margin-top: 4%;">
+        <div class="col-sm-12 col-lg-5 col-xl-5" >
+            <p class="h3" style="text-align: center;">OTRAS AREAS</p>
+            <div style="padding-left: 14%; margin-top: 3%;">
+                <ul class="list-group list-group-flush" >
+                    <a id="li_apt " class="li_apt_margin" href="{% url 'habitaciones' %}"> <li class="list-group-item" id="li_apt"> HABITACIONES </li> </a>
+                    <a id="li_apt " class="li_apt_margin" href="{% url 'salas' %}"><li class="list-group-item" id="li_apt"> SALAS </li> </a>
+                    <a id="li_apt " class="li_apt_margin" href="{% url 'cocinas' %}"><li class="list-group-item" id="li_apt"> COCINAS </li> </a>
+                    <a id="li_apt " class="li_apt_margin" href="{% url 'sociales' %}"><li class="list-group-item" id="li_apt"> AREAS SOCIALES </li> </a>
+                    <a id="li_apt " class="li_apt_margin" href="{% url 'gimnacio' %}"><li class="list-group-item" id="li_apt"> GIMNACIO </li> </a>
+                    <a id="li_apt " class="li_apt_margin" href="{% url 'picuzzi' %}"><li class="list-group-item" id="li_apt"> PICUZZI </li> </a>
+                    <a id="li_apt " class="li_apt_margin" href="{% url 'estudio' %}"><li class="list-group-item" id="li_apt"> ESTUDIO </li> </a>
+                </ul>
+            </div>
+           <!-- <h5 class="h5">Esta seccion cuanta con una Habitacion,<br> un closet <br> un bano <br> sala <br> comedor <br> cocina <br>y estudio.</h5> -->
+        </div>
+
+        <div class="col-sm-12 col-lg-7 col-xl-7" >
+            <div style="margin-left: 14.5% ;">
+                <p class="h3" style="text-align: center;">GIMNACIO</p>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#modal_imagen1">
+                    <img style="max-width: 600px; " src="{% static '/TempoTower/images/gimnacio_01.jpg' %}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>  
+    
+    <!--Imagenes en fila-->
+    <div class="row" style="margin-left: 3%; margin-right: 3%; margin-top: 2% ; margin-bottom: 2%;">
+        <div class="col-sm-12 col-lg-6 col-xl-6 product-item ">
+            <a type="button" id="a_img_fila" data-bs-toggle="modal" data-bs-target="#modal_imagen2">
+                <img class="" style="max-width: 600px; " src="{% static '/TempoTower/images/gimnacio_02.png' %}" alt="">
+            </a>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 col-xl-6">
+            <a type="button" id="a_img_fila" class="" data-bs-toggle="modal" data-bs-target="#modal_imagen3">
+                <img class="" style="max-width: 600px;" src="{% static '/TempoTower/images/gimnacio_03.jpg' %}" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="row" style="margin-left: 3%; margin-right: 3%; margin-top: 2% ; margin-bottom: 2%;">
+        <div class="col-sm-12 col-lg-6 col-xl-6">
+            <a type="button" id="a_img_fila" class="" data-bs-toggle="modal" data-bs-target="#modal_imagen4">
+                <img class="" style="max-width: 600px;" src="{% static '/TempoTower/images/gimnacio_04.jpg' %}" alt="">
+            </a>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 col-xl-6">
+            <a type="button" id="a_img_fila" class="" data-bs-toggle="modal" data-bs-target="#modal_imagen5">
+                <img class="" style="max-width: 600px;" src="{% static '/TempoTower/images/gimnacio_05.jpg' %}" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    
+    <!-- Button trigger modal -->
+
+     <!-- Modal 1-->
+     <div class="modal fade" id="modal_imagen1" tabindex="-1" aria-labelledby="ModalCloset" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img  src="{% static '/TempoTower/images/gimnacio_01.JPG' %}" alt="">
+            </div>
+        </div>
+        <!--flecha previus-->
+        <button class="carousel-control-prev" type="button" data-bs-toggle="modal" data-bs-target="#modal_imagen5">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <!--flecha next-->
+        <button class="carousel-control-next" type="button" data-bs-toggle="modal" data-bs-target="#modal_imagen2">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+  
+  <!-- Modal 2-->
+    <div class="modal fade" id="modal_imagen2" tabindex="-1" aria-labelledby="ModalCloset" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img  src="{% static '/TempoTower/images/gimnacio_02.jpg' %}" alt="">
+            </div>
+        </div>
+        <!--flecha previus-->
+        <button class="carousel-control-prev" type="button" data-bs-toggle="modal" data-bs-target="#modal_imagen1">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <!--flecha next-->
+        <button class="carousel-control-next" type="button" data-bs-toggle="modal" data-bs-target="#modal_imagen3">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Modal 3-->
+    <div class="modal fade" id="modal_imagen3" tabindex="-1" aria-labelledby="ModalCloset" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img  src="{% static '/TempoTower/images/gimnacio_03.JPG' %}" alt=""> 
+            </div>
+        </div>
+        <!--flecha previus-->
+        <button class="carousel-control-prev" type="button" data-bs-toggle="modal" data-bs-target="#modal_imagen2">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <!--flecha next-->
+        <button class="carousel-control-next" type="button" data-bs-toggle="modal" data-bs-target="#modal_imagen4">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Modal 4-->
+    <div class="modal fade" id="modal_imagen4" tabindex="-1" aria-labelledby="ModalCloset" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img  src="{% static '/TempoTower/images/gimnacio_04.JPG' %}" alt=""> 
+            </div>
+        </div>
+        <!--flecha previus-->
+        <button class="carousel-control-prev" type="button" data-bs-toggle="modal" data-bs-target="#modal_imagen3">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <!--flecha next-->
+        <button class="carousel-control-next" type="button" data-bs-toggle="modal" data-bs-target="#modal_imagen5">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Modal 5-->
+    <div class="modal fade" id="modal_imagen5" tabindex="-1" aria-labelledby="ModalCloset" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img  src="{% static '/TempoTower/images/gimnacio_05.jpg' %}" alt=""> 
+            </div>
+        </div>
+        <!--flecha previus-->
+        <button class="carousel-control-prev" type="button" data-bs-toggle="modal" data-bs-target="#modal_imagen4">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <!--flecha next-->
+        <button class="carousel-control-next" type="button" data-bs-toggle="modal" data-bs-target="#modal_imagen1">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+</div>
+
+
+
+{% endblock %}

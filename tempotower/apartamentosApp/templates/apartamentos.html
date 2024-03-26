@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+		
+
+		<!-- Start Apartamentos Section -->
+		<div class="product-section">
+			<div class="container">
+				<p class="h1" style="text-align: center; margin-bottom: 2%; margin-top: -5%;">Aqui te mostramos algunas de nuestas areas</p>
+			
+				<div class="row">
+					<!-- Start Column 1 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'habitaciones' %}">
+							<img src="{% static '/TempoTower/images/portada_habitacion.png' %}"  class="img-fluid product-thumbnail">
+							<h3 class="product-title"><STRONG>HABITACIONES</strong></h3>
+								<h3 class="product-title"></h3>
+
+							<span class="icon-cross">
+								<img src="{% static '/TempoTower/images/cross.svg' %}" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 1 -->
+
+					<!-- Start Column 2 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'salas' %}">
+							<img src="{% static '/TempoTower/images/Sala_04.png' %}" class="img-fluid product-thumbnail">
+							<h3 class="product-title"><STRONG>SALAS</strong></h3>
+								<h3 class="product-title"></h3>
+
+							<span class="icon-cross">
+								<img src="{% static '/TempoTower/images/cross.svg' %}" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 2 -->
+
+					<!-- Start Column 3 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'sociales' %}">
+							<img src="{% static '/TempoTower/images/sociales_01_01.png' %}" class="img-fluid product-thumbnail" style="max-width: 475px;">
+							<h3 class="product-title"><STRONG>AREAS SOCIALES</strong></h3>
+								<h3 class="product-title"></h3>
+
+							<span class="icon-cross">
+								<img src="{% static '/TempoTower/images/cross.svg' %}" class="img-fluid">
+							</span>
+						</a>
+					</div>
+					<!-- End Column 3 -->
+
+				</div>
+
+				<div class="row" style="margin-top: 1cm;">
+
+					<!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'cocinas' %}">
+							<img src="{% static '/TempoTower/images/portada_cocina3.png' %}" class="img-fluid product-thumbnail" style="max-height: 415px;">
+							<h3 class="product-title"><STRONG>COCINAS</strong></h3>
+								<h3 class="product-title"></h3>
+
+							<span class="icon-cross">
+								<img src="{% static '/TempoTower/images/cross.svg' %}" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 4 -->					
+					
+					<!-- Start Column 5 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'gimnacio' %}">
+							<img src="{% static '/TempoTower/images/portada_gimnacio.png' %}" class="img-fluid product-thumbnail" >
+							<h3 class="product-title"><STRONG>GIMNACIO</strong></h3>
+								<h3 class="product-title"></h3>
+
+							<span class="icon-cross">
+								<img src="{% static '/TempoTower/images/cross.svg' %}" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 5 -->
+					
+					<!-- Start Column 6 -->
+					<div class="col-12 col-md-4 col-lg-4 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'picuzzi' %}">
+							<img src="{% static '/TempoTower/images/picuzzi_02.png' %}" class="img-fluid product-thumbnail">
+							<h3 class="product-title"><STRONG>PICUZZI</strong></h3>
+								<h3 class="product-title"></h3>
+
+							<span class="icon-cross">
+								<img src="{% static '/TempoTower/images/cross.svg' %}" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- Start Column 6 -->
+					
+
+
+
+
+			</div>
+		</div>
+		<!-- End Product Section -->
+
+		
+
+
+
+
+
+{% endblock %}
